@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studio - Components</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">Studio</a>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="components.html">Components</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <h1>Components</h1>
+            <p>A small library of form elements, a CSS-only modal and alert boxes.</p>
+        </section>
+
+        <div class="stack">
+            <section class="card" id="form">
+                <h2>Form elements</h2>
+                <form class="form" action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="topic">Topic</label>
+                    <select id="topic" name="topic">
+                        <option value="question">Question</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <button class="btn" type="submit">Send</button>
+                </form>
+            </section>
+
+            <section class="card" id="modal-demo">
+                <h2>Modal window</h2>
+                <p>This modal is built with CSS only, no JavaScript.</p>
+                <a class="btn" href="#modal">Open modal</a>
+
+                <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                    <div class="modal-box">
+                        <h2 id="modal-title">Hello!</h2>
+                        <p>This modal opens with the :target selector.</p>
+                        <a class="btn" href="#modal-demo">Close</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card" id="alerts">
+                <h2>Alerts</h2>
+                <div class="alert alert-info" role="status">Info: your changes were saved as a draft.</div>
+                <div class="alert alert-success" role="status">Success: your message was sent.</div>
+                <div class="alert alert-warning" role="status">Warning: your session will expire soon.</div>
+                <div class="alert alert-error" role="alert">Error: something went wrong, please try again.</div>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">In-Lab Practice (Studio)</div>
+    </footer>
+</body>
+</html>
